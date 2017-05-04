@@ -2,10 +2,11 @@ import React from 'react';
 import Square from './Square';
 
 function ShadesOfGrey (props) {
+  const {progressions = 9} = props
   const greyValues = Array.from(
-    {length: 9},
+    {length: progressions},
     function (val, index) {
-      return Math.round(253/9 * index) + 1
+      return Math.round(253/progressions * index) + 1
     }
   );
 

@@ -10,7 +10,24 @@ import OrangeRectangle from './OrangeRectangle';
 import Shape from './Shape';
 import Greetings from './Greetings';
 import ShadesOfGrey from './ShadesOfGrey';
+import Fa from './Fa';
+import GridBoard from './GridBoard';
+import Timer from './Timer';
+import StopWatch from './StopWatch';
+import Search from './Search';
 
+const names = [
+  'Nicholas',
+  'Siobhan',
+  'Cyndi',
+  'Chase',
+  'Amin',
+  'Julius',
+  'Serena',
+  'Nic',
+  'Ahmed',
+  'Trista'
+]
 
 function Main (props) {
   const style = {
@@ -33,6 +50,15 @@ function Main (props) {
       <Shape color="Blue" type="Square" />
       <Greetings names = {['Cyndi', 'Chase', 'Nic', 'Josh']} />
       <ShadesOfGrey />
+      <ShadesOfGrey progressions = {13} />
+      <Fa kind='weibo' size='5x' color ="Red" spin = {false}/>
+      <Fa kind='qq' size='5x' color ="Green" spin={true} />
+      <GridBoard isBordered = {true}/>
+      <Shape />
+      <Shape colors={['Yellow', 'Brown', 'Aquamarine', 'Gainsboro']} />
+      <Timer />
+      <StopWatch />
+      <Search data={names} />
     </div>
   );
 }
