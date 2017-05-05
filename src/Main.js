@@ -15,6 +15,8 @@ import GridBoard from './GridBoard';
 import Timer from './Timer';
 import StopWatch from './StopWatch';
 import Search from './Search';
+import ShapeMover from './ShapeMover';
+import ShapeMaker from './ShapeMaker';
 
 const names = [
   'Nicholas',
@@ -38,6 +40,8 @@ function Main (props) {
 
   return (
     <div style={style} className="main">
+      <ShapeMover />
+      <ShapeMaker />
       <HelloWorld name="Jon Snow" />
       <HelloWorld name="Daenerys Targaryan" />
       <HelloWorld name="Cersei Lannister" />
@@ -59,6 +63,7 @@ function Main (props) {
       <Timer />
       <StopWatch />
       <Search data={names} />
+
     </div>
   );
 }
